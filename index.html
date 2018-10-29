@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+  <head>
+  
+  <!-- http://192.168.62.64/CustomerRegistration/api/Registration -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+	
+	<!-- Own CSS -->
+    <link rel="stylesheet" href="dist/css/index.css">
+
+    <title>Registration</title>
+  </head>
+  <body>
+	<!-- Image and text -->
+	
+	<nav class="navbar navbar-light" style="background-color: #F3992A;">
+		<div class="container">
+		  <div class="navbar-brand">
+			<img src="dist/img/spedionlogo.png" height="30" class="d-inline-block align-top" alt="">
+			<h1>Registration</h1>
+		  </div>
+		 </div>
+	</nav>
+	
+
+	<div class="container text-light mt-5 mb-5">		
+		<h2 class="mb-4">Please create a new user profile</h2>
+		
+		<!--Formular-->
+		<form id="registrationForm">
+		
+		<div class="row">
+			<!--Vorname*-->
+			<div class="form-group col-md-6">
+				<label for="firstname">Vorname*</label>
+				<input type="text" class="form-control" id="firstname" aria-describedby="firstnameHelp" placeholder="Vorname" required>
+				<small id="firstnameHelp" class="form-text text-muted">Bitte geben Sie Ihren Vornamen ein, wie Sie ihn lesen möchten: Bsp: Rainer oder Rainer Maria</small>
+			</div>
+			
+			<!--Nachname*-->
+			<div class="form-group col-md-6">
+				<label for="firstname">Nachname*</label>
+				<input type="text" class="form-control" id="lastname" aria-describedby="lastnameHelp" placeholder="Nachname" required>
+				<small id="lastnameHelp" class="form-text text-muted">Bitte geben Sie Ihren Nachnamen ein.</small>
+			</div>
+		
+		</div>
+
+			<!--E-Mail*-->
+			<div class="form-group">
+				<label for="email">E-Mail*</label>
+				<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ihrname@googlemail.com" required>
+				<small id="emailHelp" class="form-text text-muted">Wir geben Ihre Emailadresse nicht an Dritte weiter.</small>
+			</div>
+			
+			<!--Firma*-->
+			<div class="form-group">
+				<label for="companyName">Firma*</label>
+				<input type="text" class="form-control" id="companyName" aria-describedby="companyNameHelp" placeholder="ABC Spedition Forever" required>
+				<small id="companyNameHelp" class="form-text text-muted">Wie findet man Sie im Unternehmensregister?</small>
+			</div>
+			
+			<!--Telefonnummer*-->
+			<div class="form-group">
+				<label for="firstname">Telefonnummer*</label>
+				<input type="number" class="form-control" id="phoneNumber" aria-describedby="phoneNumberHelp" placeholder="0049123456789" required>
+				<small id="phoneNumberHelp" class="form-text text-muted">Bitte geben Sie eine Telefonnummer mit "00", Ländercode und ohne Leerzwichen ein.</small>
+			</div>
+			
+			<!--Benutzername*-->
+			<div class="form-group">
+				<label for="username">Benutzername*</label>
+				<input type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="HAL 9000" required>
+				<small id="usernameHelp" class="form-text text-muted">Bitte suchen Sie sich einen Benutzernamen aus.</small>
+			</div>		
+			
+			<!--Passwort*-->
+			<div class="form-group">
+				<label for="password">Passwort*</label>
+				<input type="password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="*****" required>
+				<small id="passwordHelp" class="form-text text-muted">Bitte suchen Sie sich einen Benutzernamen aus.</small>
+			</div>
+			
+			<!--Wie haben Sie von uns erfahren?-->
+			 <div class="form-group">
+			  <label for="registrationReason">Wie haben Sie von uns erfahren?</label>
+			  <select id="registrationReason" class="form-control" required>
+				<option disabled selected value> -- select an option -- </option>
+				<option>Keine Angabe</option>
+				<option>Tele Traffic</option>
+				<option>Transaktuell</option>
+				<option>Verkehrsrundschau</option>
+				<option>Google</option>
+				<option>Empfehlung</option>
+			  </select>
+			</div>
+			
+			<!--Nachricht an uns*-->
+			<div class="form-group">
+				<label for="firstname">Nachricht*</label>
+				<input type="text" class="form-control" id="message" aria-describedby="messageHelp" placeholder="" required>
+				<small id="messageHelp" class="form-text text-muted">Ihre persönliche Nachricht an uns.</small>
+			</div>
+			
+			<!--Send-->
+			<button id="sendBtn" class="btn btn-primary">Absenden</button>
+			<!-- type="submit" -->
+		</form>
+		
+		<!--Interner Formfiller -->
+		<button id="fillFormBtn"  type="submit" class="btn btn-primary mt-3">Fill Form</button>
+	</div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="dist/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="dist/js/popper.min.js"></script>      
+    <script src="dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+	<!--Eigene Scripts-->
+	<script src="dist/js/index.js"></script>
+  </body>
+</html>
